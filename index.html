@@ -1,10 +1,331 @@
 <!doctype html>
+<html lang="en">
+<head>
 <meta charset="utf-8">
-<title>Texas Elite Air Conditioning and Heating</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Texas Elite Air Conditioning and Heating — Kyle, TX</title>
+<meta name="description" content="Family owned and operated since 2009. AC repair, heating repair, installation and maintenance serving Austin to San Antonio and surrounding areas. Call (512) 749-7721.">
 <style>
-  body { margin: 0; font: 16px/1.6 system-ui, sans-serif; background: #101014; color: #e8e5f2;
-          display: grid; place-items: center; min-height: 100vh; text-align: center; }
-  p { color: #9a93ae; }
+  :root {
+    --ink: #0f1720;
+    --paper: #fbf9f4;
+    --muted: #5b6470;
+    --line: #dcd6c8;
+    --blue: #1c4e73;
+    --orange: #c1550f;
+    --panel: #f1ede1;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.55;
+  }
+
+  a { color: inherit; }
+
+  .wrap {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+  }
+
+  /* Top bar: name + call button, always reachable */
+  header.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--ink);
+    color: var(--paper);
+    border-bottom: 3px solid var(--orange);
+  }
+
+  header.topbar .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+
+  .brand {
+    font-weight: 700;
+    font-size: 0.95rem;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+  }
+
+  .call-pill {
+    display: inline-block;
+    white-space: nowrap;
+    background: var(--orange);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 0.5rem 0.85rem;
+    border-radius: 999px;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 2.5rem 0 2rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .hero h1 {
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
+    line-height: 1.15;
+    margin: 0 0 0.6rem;
+    color: var(--blue);
+  }
+
+  .tagline {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0 0 0.35rem;
+  }
+
+  .since {
+    color: var(--muted);
+    margin: 0 0 1.5rem;
+  }
+
+  .cta {
+    display: block;
+    text-align: center;
+    background: var(--orange);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: 0.01em;
+    padding: 1rem 1rem;
+    border-radius: 0.6rem;
+  }
+
+  .cta-note {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-top: 0.65rem;
+  }
+
+  .cta-note a { text-decoration: underline; }
+
+  /* Section rhythm */
+  section {
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  section:last-of-type { border-bottom: none; }
+
+  h2 {
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--blue);
+    margin: 0 0 1rem;
+  }
+
+  ul.services {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  ul.services li {
+    background: var(--panel);
+    border-left: 3px solid var(--orange);
+    padding: 0.7rem 0.9rem;
+    font-weight: 600;
+  }
+
+  .scope {
+    margin-top: 1rem;
+    color: var(--muted);
+  }
+
+  .area-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .area-list li {
+    padding: 0.5rem 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .area-list li:first-child { border-top: none; }
+
+  .area-list q {
+    font-style: italic;
+  }
+
+  .about blockquote {
+    margin: 0 0 1rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--blue);
+    font-size: 1.05rem;
+    color: var(--ink);
+  }
+
+  .about blockquote footer {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    font-style: normal;
+  }
+
+  .rep {
+    background: var(--panel);
+    padding: 1.5rem 1.25rem;
+    border-radius: 0.6rem;
+  }
+
+  .rep .stars {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--orange);
+    line-height: 1;
+  }
+
+  .rep .stars-label {
+    color: var(--muted);
+    margin-top: 0.3rem;
+  }
+
+  .rep p.note {
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .contact p {
+    margin: 0.4rem 0;
+  }
+
+  .contact .big-phone {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--blue);
+    text-decoration: none;
+  }
+
+  .contact .label {
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.15rem;
+  }
+
+  footer.site {
+    padding: 2rem 0 3rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  @media (min-width: 34rem) {
+    ul.services {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 </style>
-<h1>Texas Elite Air Conditioning and Heating</h1>
-<p>Not built yet.</p>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <span class="brand">Texas Elite Air&nbsp;Conditioning &amp; Heating</span>
+    <a class="call-pill" href="tel:+15127497721">Call (512) 749-7721</a>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="hero">
+    <h1>Texas Elite Air Conditioning and Heating</h1>
+    <p class="tagline">Local. Trusted. Affordable.</p>
+    <p class="since">Family owned and operated since 2009, serving Kyle, TX and the surrounding area.</p>
+    <a class="cta" href="tel:+15127497721">(512) 749-7721</a>
+    <p class="cta-note">Prefer to text? <a href="sms:+17373024447">737-302-4447</a></p>
+  </section>
+
+  <section>
+    <h2>What we do</h2>
+    <ul class="services">
+      <li>Air conditioning repair</li>
+      <li>Heating repair</li>
+      <li>System replacement &amp; installation</li>
+      <li>Maintenance</li>
+      <li>Mini-splits</li>
+      <li>Heat pumps</li>
+      <li>Gas furnaces</li>
+    </ul>
+    <p class="scope">Residential and light commercial.</p>
+  </section>
+
+  <section>
+    <h2>Where we work</h2>
+    <ul class="area-list">
+      <li><q>Austin to SA &amp; surrounding areas.</q></li>
+      <li>Also listed as serving Hays County and the surrounding area.</li>
+    </ul>
+  </section>
+
+  <section class="about">
+    <h2>Our mission</h2>
+    <blockquote>
+      &ldquo;Our mission is to simplify your HVAC issue and help you make an
+      informed decision that best suits your needs at an affordable rate.&rdquo;
+    </blockquote>
+    <blockquote>
+      &ldquo;We treat every customer as a member of our family, not just a
+      customer,&rdquo; with guarantees on all work.
+    </blockquote>
+  </section>
+
+  <section>
+    <h2>Reputation</h2>
+    <div class="rep">
+      <div class="stars">5.0 ★</div>
+      <p class="stars-label">Average rating across 476 reviews on Birdeye</p>
+      <p class="note">Reviewers on Birdeye consistently point to owner Ozzie for
+      straight answers — including technicians who won&rsquo;t recommend a part
+      replacement that isn&rsquo;t needed.</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Get in touch</h2>
+    <p class="label">Call</p>
+    <p><a class="big-phone" href="tel:+15127497721">(512) 749-7721</a></p>
+    <p class="label">Text</p>
+    <p><a class="big-phone" href="sms:+17373024447">737-302-4447</a></p>
+    <p class="label">Based in</p>
+    <p>Kyle, TX 78640</p>
+  </section>
+
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <p>Texas Elite Air Conditioning and Heating &middot; Kyle, TX 78640</p>
+  </div>
+</footer>
+
+</body>
+</html>
