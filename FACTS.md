@@ -51,3 +51,32 @@ that is actually sourced.
 **The rule this enforces:** a number that is not in FACTS.md does not go on the page.
 The Cleaning Queen build had review figures taken from a similarly-named but different
 business; this is the same failure caught before publishing rather than after.
+
+## Second correction — 2026-09-16, review count
+
+Cross-checked every source against the phone number Enoch will actually dial,
+**(512) 749-7721**:
+
+| Source | Carries 749-7721? | Rating | Review count |
+|---|---|---|---|
+| Nextdoor | **Yes** (12 occurrences) | 5.0 | 113 |
+| hvacservice.io | **Yes** | 5.0 | 422 |
+| dispatchcore.io | **Yes** | 5/5 | 405 |
+| Birdeye | **No — lists (512) 787-7082** | 5.0 | 476 |
+| Yelp | Could not check — bot-blocked | — | — |
+| Instagram | No phone shown | — | — |
+
+**Two things follow.**
+
+1. **The 5.0 rating is safe.** Every source agrees, including the three that carry the
+   correct phone number.
+2. **No single review count is safe to state.** They range 113–476 because each
+   aggregator counts a different pool. The 476 figure came from **Birdeye, whose listed
+   phone number does not match** — most likely a Birdeye call-tracking number rather than
+   a different business (name, city, ZIP and street all match), but it is not anchored.
+
+**The page now says "5.0 across more than 400 reviews"**, which two independently
+phone-matched sources support (422 and 405). The specific 476 has been removed.
+
+**Ask Ozzie on the call** whether (512) 787-7082 is also theirs. If it is, Birdeye is
+confirmed and the higher count can go back on.
