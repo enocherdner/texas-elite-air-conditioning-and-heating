@@ -1,331 +1,381 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Texas Elite Air Conditioning and Heating — Kyle, TX</title>
-<meta name="description" content="Family owned and operated since 2009. AC repair, heating repair, installation and maintenance serving Austin to San Antonio and surrounding areas. Call (512) 749-7721.">
+<title>Texas Elite Air Conditioning &amp; Heating — Kyle, TX</title>
+<meta name="description" content="Family-owned HVAC in Kyle, Texas since 2009. AC and heating repair, system replacement, mini-splits and heat pumps. Call (512) 749-7721.">
+<link rel="canonical" href="https://enocherdner.github.io/texas-elite-air-conditioning-and-heating/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='13' fill='%230a2f57'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='700' fill='%23ffffff' text-anchor='middle'%3ETE%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#0a2f57">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Texas Elite Air Conditioning and Heating">
+<meta property="og:title" content="Texas Elite Air Conditioning and Heating">
+<meta property="og:description" content="Family-owned HVAC in Kyle, Texas since 2009. Air conditioning and heating repair, system replacement, mini-splits and heat pumps.">
+<meta property="og:url" content="https://enocherdner.github.io/texas-elite-air-conditioning-and-heating/">
+<meta property="og:image" content="https://enocherdner.github.io/texas-elite-air-conditioning-and-heating/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Texas Elite Air Conditioning and Heating">
+<meta name="twitter:description" content="Family-owned HVAC in Kyle, Texas since 2009. Air conditioning and heating repair, system replacement, mini-splits and heat pumps.">
+<meta name="twitter:image" content="https://enocherdner.github.io/texas-elite-air-conditioning-and-heating/og.png">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "HVACBusiness",
+ "name": "Texas Elite Air Conditioning and Heating",
+ "description": "Family-owned HVAC in Kyle, Texas since 2009. Air conditioning and heating repair, system replacement, mini-splits and heat pumps.",
+ "telephone": "+1-512-749-7721",
+ "url": "https://enocherdner.github.io/texas-elite-air-conditioning-and-heating/",
+ "image": "https://enocherdner.github.io/texas-elite-air-conditioning-and-heating/og.png",
+ "address": {
+  "@type": "PostalAddress",
+  "addressLocality": "Kyle",
+  "addressRegion": "TX",
+  "postalCode": "78640",
+  "addressCountry": "US"
+ },
+ "areaServed": [
+  {
+   "@type": "Place",
+   "name": "Kyle"
+  },
+  {
+   "@type": "Place",
+   "name": "Buda"
+  },
+  {
+   "@type": "Place",
+   "name": "San Marcos"
+  },
+  {
+   "@type": "Place",
+   "name": "Hays County"
+  },
+  {
+   "@type": "Place",
+   "name": "Austin"
+  },
+  {
+   "@type": "Place",
+   "name": "San Antonio"
+  }
+ ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --ink: #0f1720;
-    --paper: #fbf9f4;
-    --muted: #5b6470;
-    --line: #dcd6c8;
-    --blue: #1c4e73;
-    --orange: #c1550f;
-    --panel: #f1ede1;
+  :root{
+    --ink:#101317; --dim:#575e6a; --faint:#8b929e;
+    --bg:#fcfcfd; --panel:#ffffff; --line:#e6e9ee; --hair:#f0f2f5;
+    --brand:#1d6fc4; --deep:#0a2f57; --tint:#eaf2fb;
+    --shadow:0 1px 2px rgba(16,19,23,.04),0 8px 24px -8px rgba(16,19,23,.10);
+    --shadow-lg:0 2px 4px rgba(16,19,23,.05),0 24px 60px -18px rgba(16,19,23,.22);
   }
-
-  * { box-sizing: border-box; }
-
-  html { -webkit-text-size-adjust: 100%; }
-
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: var(--ink);
-    background: var(--paper);
-    line-height: 1.55;
-  }
-
-  a { color: inherit; }
-
-  .wrap {
-    max-width: 40rem;
-    margin: 0 auto;
-    padding: 0 1.25rem;
-  }
-
-  /* Top bar: name + call button, always reachable */
-  header.topbar {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background: var(--ink);
-    color: var(--paper);
-    border-bottom: 3px solid var(--orange);
-  }
-
-  header.topbar .wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.75rem;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
-  }
-
-  .brand {
-    font-weight: 700;
-    font-size: 0.95rem;
-    line-height: 1.2;
-    letter-spacing: 0.01em;
-  }
-
-  .call-pill {
-    display: inline-block;
-    white-space: nowrap;
-    background: var(--orange);
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 0.85rem;
-    padding: 0.5rem 0.85rem;
-    border-radius: 999px;
-  }
-
-  /* Hero */
-  .hero {
-    padding: 2.5rem 0 2rem;
-    border-bottom: 1px solid var(--line);
-  }
-
-  .hero h1 {
-    font-size: clamp(1.75rem, 6vw, 2.5rem);
-    line-height: 1.15;
-    margin: 0 0 0.6rem;
-    color: var(--blue);
-  }
-
-  .tagline {
-    font-size: 1.05rem;
-    font-weight: 600;
-    margin: 0 0 0.35rem;
-  }
-
-  .since {
-    color: var(--muted);
-    margin: 0 0 1.5rem;
-  }
-
-  .cta {
-    display: block;
-    text-align: center;
-    background: var(--orange);
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.3rem;
-    letter-spacing: 0.01em;
-    padding: 1rem 1rem;
-    border-radius: 0.6rem;
-  }
-
-  .cta-note {
-    text-align: center;
-    color: var(--muted);
-    font-size: 0.9rem;
-    margin-top: 0.65rem;
-  }
-
-  .cta-note a { text-decoration: underline; }
-
-  /* Section rhythm */
-  section {
-    padding: 2rem 0;
-    border-bottom: 1px solid var(--line);
-  }
-
-  section:last-of-type { border-bottom: none; }
-
-  h2 {
-    font-size: 1.05rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--blue);
-    margin: 0 0 1rem;
-  }
-
-  ul.services {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.6rem;
-  }
-
-  ul.services li {
-    background: var(--panel);
-    border-left: 3px solid var(--orange);
-    padding: 0.7rem 0.9rem;
-    font-weight: 600;
-  }
-
-  .scope {
-    margin-top: 1rem;
-    color: var(--muted);
-  }
-
-  .area-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .area-list li {
-    padding: 0.5rem 0;
-    border-top: 1px solid var(--line);
-  }
-
-  .area-list li:first-child { border-top: none; }
-
-  .area-list q {
-    font-style: italic;
-  }
-
-  .about blockquote {
-    margin: 0 0 1rem;
-    padding-left: 1rem;
-    border-left: 3px solid var(--blue);
-    font-size: 1.05rem;
-    color: var(--ink);
-  }
-
-  .about blockquote footer {
-    margin-top: 0.4rem;
-    font-size: 0.85rem;
-    color: var(--muted);
-    font-style: normal;
-  }
-
-  .rep {
-    background: var(--panel);
-    padding: 1.5rem 1.25rem;
-    border-radius: 0.6rem;
-  }
-
-  .rep .stars {
-    font-size: 2rem;
-    font-weight: 800;
-    color: var(--orange);
-    line-height: 1;
-  }
-
-  .rep .stars-label {
-    color: var(--muted);
-    margin-top: 0.3rem;
-  }
-
-  .rep p.note {
-    margin-top: 1rem;
-    margin-bottom: 0;
-  }
-
-  .contact p {
-    margin: 0.4rem 0;
-  }
-
-  .contact .big-phone {
-    display: inline-block;
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--blue);
-    text-decoration: none;
-  }
-
-  .contact .label {
-    color: var(--muted);
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    margin-bottom: 0.15rem;
-  }
-
-  footer.site {
-    padding: 2rem 0 3rem;
-    color: var(--muted);
-    font-size: 0.85rem;
-  }
-
-  @media (min-width: 34rem) {
-    ul.services {
-      grid-template-columns: 1fr 1fr;
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ink:#f0f2f5; --dim:#a8afba; --faint:#787f8b;
+      --bg:#0c0e11; --panel:#14171c; --line:#242830; --hair:#1a1d23;
+      --tint:#0f1a26;
+      --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -8px rgba(0,0,0,.6);
+      --shadow-lg:0 2px 4px rgba(0,0,0,.4),0 24px 60px -18px rgba(0,0,0,.7);
     }
   }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:17px/1.62 Inter,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;padding-bottom:76px;}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 28px;}
+  .narrow{max-width:720px;}
+  h1,h2,h3,.display{font-family:"Fraunces",Georgia,serif;font-weight:600;letter-spacing:-.02em;line-height:1.02;}
+
+  /* ─── hero ─────────────────────────────────────── */
+  .hero{position:relative;overflow:hidden;background:var(--deep);color:#fff;
+    padding:78px 0 66px;}
+  .hero .art{position:absolute;inset:0;opacity:.17;pointer-events:none;}
+  .hero .wrap{position:relative;}
+  .kicker{display:inline-flex;align-items:center;gap:9px;font-size:12px;
+    letter-spacing:.19em;text-transform:uppercase;font-weight:600;
+    padding:7px 14px;border:1px solid rgba(255,255,255,.28);border-radius:100px;
+    margin:0 0 26px;}
+  .kicker i{width:6px;height:6px;border-radius:50%;background:#61d0a0;font-style:normal;}
+  h1{font-size:clamp(42px,7.4vw,80px);margin:0 0 20px;max-width:15ch;}
+  .sub{font-size:clamp(17px,2.4vw,21px);line-height:1.5;opacity:.9;
+    max-width:44ch;margin:0 0 34px;font-weight:400;}
+  .actions{display:flex;gap:13px;flex-wrap:wrap;align-items:center;}
+  .btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;
+    padding:17px 27px;border-radius:11px;font-weight:600;font-size:18px;
+    transition:transform .14s ease,box-shadow .14s ease;}
+  .btn.primary{background:#fff;color:var(--deep);box-shadow:var(--shadow-lg);}
+  .btn.ghost{border:1px solid rgba(255,255,255,.34);color:#fff;}
+  .btn:hover{transform:translateY(-2px);}
+  .btn svg{width:19px;height:19px;flex:none;}
+
+  /* ─── proof band ───────────────────────────────── */
+  .band{background:var(--tint);border-bottom:1px solid var(--line);padding:0;}
+  .band .wrap{display:grid;gap:0;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));}
+  .stat{padding:30px 26px 30px 0;border-right:1px solid var(--line);}
+  .stat:last-child{border-right:0;}
+  .stat b{display:block;font-family:"Fraunces",Georgia,serif;font-weight:600;
+    font-size:40px;line-height:1;letter-spacing:-.025em;margin-bottom:7px;}
+  .stat b em{font-style:normal;font-size:22px;color:var(--brand);}
+  .stat span{font-size:14.5px;color:var(--dim);display:block;line-height:1.45;}
+  @media(max-width:700px){.stat{border-right:0;border-bottom:1px solid var(--line);
+    padding:22px 0;} .stat:last-child{border-bottom:0;}}
+
+  /* ─── sections ─────────────────────────────────── */
+  section{padding:74px 0;}
+  section + section{border-top:1px solid var(--hair);}
+  .label{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--brand);font-weight:700;margin:0 0 15px;}
+  h2{font-size:clamp(30px,4.6vw,44px);margin:0 0 20px;max-width:18ch;}
+  .lede{font-size:19px;color:var(--dim);max-width:52ch;margin:0 0 34px;}
+  p{margin:0 0 16px;}
+
+  .cards{display:grid;gap:15px;grid-template-columns:repeat(auto-fit,minmax(252px,1fr));}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:15px;
+    padding:25px 25px 27px;box-shadow:var(--shadow);
+    transition:transform .16s ease,box-shadow .16s ease;}
+  .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);}
+  .card .ic{width:38px;height:38px;border-radius:10px;background:var(--tint);
+    display:flex;align-items:center;justify-content:center;margin-bottom:16px;}
+  .card .ic svg{width:20px;height:20px;stroke:var(--brand);}
+  .card b{display:block;font-size:17.5px;font-weight:600;margin-bottom:6px;}
+  .card span{font-size:15.5px;color:var(--dim);line-height:1.55;}
+
+  .chips{display:flex;flex-wrap:wrap;gap:9px;}
+  .chip{border:1px solid var(--line);background:var(--panel);border-radius:100px;
+    padding:9px 17px;font-size:15.5px;}
+
+  .quotes{display:grid;gap:15px;grid-template-columns:repeat(auto-fit,minmax(265px,1fr));}
+  figure{margin:0;background:var(--panel);border:1px solid var(--line);
+    border-radius:15px;padding:25px;box-shadow:var(--shadow);}
+  figure p{font-size:17px;margin:0 0 14px;}
+  figcaption{font-size:13.5px;color:var(--faint);}
+  .mark{font-family:"Fraunces",Georgia,serif;font-size:44px;line-height:.6;color:var(--brand);
+    opacity:.35;display:block;margin-bottom:6px;}
+
+  /* ─── gallery placeholder ──────────────────────── */
+  .gallery{display:grid;gap:13px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));}
+  .shot{aspect-ratio:4/3;border-radius:14px;border:1px dashed var(--line);
+    background:var(--tint);display:flex;align-items:center;justify-content:center;
+    text-align:center;padding:20px;}
+  .shot span{font-size:13.5px;color:var(--faint);line-height:1.5;}
+
+  /* ─── enquiry ──────────────────────────────────── */
+  .enq{background:var(--deep);color:#fff;border-radius:22px;padding:46px 44px;
+    position:relative;overflow:hidden;}
+  .enq .art{position:absolute;inset:0;opacity:.13;pointer-events:none;}
+  .enq > *{position:relative;}
+  .enq h2{color:#fff;margin-bottom:12px;}
+  .enq .lede{color:rgba(255,255,255,.78);margin-bottom:28px;}
+  form{display:grid;gap:13px;grid-template-columns:1fr 1fr;}
+  form .full{grid-column:1/-1;}
+  label{display:block;font-size:12px;letter-spacing:.13em;text-transform:uppercase;
+    color:rgba(255,255,255,.62);margin-bottom:7px;font-weight:600;}
+  input,textarea{width:100%;background:rgba(255,255,255,.09);color:#fff;
+    border:1px solid rgba(255,255,255,.2);border-radius:11px;padding:14px 16px;
+    font:16px/1.5 Inter,sans-serif;transition:border-color .15s ease,background .15s ease;}
+  input::placeholder,textarea::placeholder{color:rgba(255,255,255,.42);}
+  input:focus,textarea:focus{outline:none;border-color:rgba(255,255,255,.6);
+    background:rgba(255,255,255,.14);}
+  textarea{min-height:112px;resize:vertical;}
+  button{background:#fff;color:var(--deep);border:0;border-radius:11px;
+    padding:16px 30px;font:600 17px Inter,sans-serif;cursor:pointer;
+    transition:transform .14s ease;}
+  button:hover{transform:translateY(-2px);}
+  .orcall{font-size:15px;color:rgba(255,255,255,.72);margin:16px 0 0;}
+  .orcall a{color:#fff;}
+  @media(max-width:640px){form{grid-template-columns:1fr;} .enq{padding:34px 24px;}}
+
+  /* ─── contact + footer ─────────────────────────── */
+  .kv{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));}
+  .kv span{display:block;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--faint);margin-bottom:7px;font-weight:600;}
+  .kv b{font-size:20px;font-weight:600;}
+  .kv a{color:var(--brand);text-decoration:none;}
+  .src{font-size:13px;color:var(--faint);margin-top:30px;}
+  footer{padding:34px 0 46px;border-top:1px solid var(--hair);
+    font-size:13.5px;color:var(--faint);}
+
+  /* ─── sticky call ──────────────────────────────── */
+  .bar{position:fixed;left:0;right:0;bottom:0;z-index:60;
+    background:var(--deep);box-shadow:0 -2px 22px rgba(0,0,0,.24);}
+  .bar a{display:flex;align-items:center;justify-content:center;gap:11px;
+    padding:20px 16px;color:#fff;text-decoration:none;font-weight:600;font-size:19px;}
+  .bar svg{width:19px;height:19px;}
+
+
+  /* ─── swap-in slots: logo and photographs ─────── */
+  .logo{max-height:62px;width:auto;display:block;margin:0 0 24px;}
+  img.shot{display:block;width:100%;height:100%;object-fit:cover;border:0;padding:0;}
+  .gallery img.shot{aspect-ratio:4/3;border-radius:14px;}
+
+  /* ─── reveal ───────────────────────────────────── */
+  .rv{opacity:0;transform:translateY(16px);
+    transition:opacity .6s cubic-bezier(.2,.7,.3,1),transform .6s cubic-bezier(.2,.7,.3,1);}
+  .rv.in{opacity:1;transform:none;}
+  @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none;}
+    html{scroll-behavior:auto;}}
 </style>
 </head>
 <body>
 
-<header class="topbar">
+<div class="hero">
+  <div class="art"><svg width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 800 400"><g fill="none" stroke="#fff" stroke-width="1.3"><path d="M-40 400 q 120 -120 300 -200 t 340 -150"/><path d="M-14 400 q 120 -129 300 -207 t 340 -155"/><path d="M12 400 q 120 -138 300 -214 t 340 -160"/><path d="M38 400 q 120 -147 300 -221 t 340 -165"/><path d="M64 400 q 120 -156 300 -228 t 340 -170"/><path d="M90 400 q 120 -165 300 -235 t 340 -175"/><path d="M116 400 q 120 -174 300 -242 t 340 -180"/><path d="M142 400 q 120 -183 300 -249 t 340 -185"/><path d="M168 400 q 120 -192 300 -256 t 340 -190"/><path d="M194 400 q 120 -201 300 -263 t 340 -195"/><path d="M220 400 q 120 -210 300 -270 t 340 -200"/><path d="M246 400 q 120 -219 300 -277 t 340 -205"/><path d="M272 400 q 120 -228 300 -284 t 340 -210"/><path d="M298 400 q 120 -237 300 -291 t 340 -215"/><path d="M324 400 q 120 -246 300 -298 t 340 -220"/><path d="M350 400 q 120 -255 300 -305 t 340 -225"/><path d="M376 400 q 120 -264 300 -312 t 340 -230"/><path d="M402 400 q 120 -273 300 -319 t 340 -235"/><path d="M428 400 q 120 -282 300 -326 t 340 -240"/><path d="M454 400 q 120 -291 300 -333 t 340 -245"/><path d="M480 400 q 120 -300 300 -340 t 340 -250"/><path d="M506 400 q 120 -309 300 -347 t 340 -255"/></g></svg></div>
   <div class="wrap">
-    <span class="brand">Texas Elite Air&nbsp;Conditioning &amp; Heating</span>
-    <a class="call-pill" href="tel:+15127497721">Call (512) 749-7721</a>
+      <!-- LOGO SLOT: put their logo in this folder as logo.png, then delete the
+           two comment markers on the line directly below. Nothing else changes. -->
+      <!--<img class="logo" src="logo.png" alt="Texas Elite Air Conditioning and Heating">-->
+    <p class="kicker"><i></i>Kyle, Texas</p>
+    <h1>Texas Elite Air Conditioning &amp; Heating</h1>
+    <p class="sub">Family owned and operated since 2009. Local. Trusted. Affordable.</p>
+    <div class="actions">
+      <a class="btn primary" href="tel:+15127497721"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>(512) 749-7721</a>
+      <a class="btn ghost" href="#enquire">Request a callback</a>
+    </div>
   </div>
-</header>
+</div>
+
+<div class="band"><div class="wrap"><div class="stat"><b>5.0<em>&#9733;</em></b><span>across 476 reviews &mdash; <a href="https://reviews.birdeye.com/texas-elite-air-conditioning-heating-llc-166216464995936" style="color:var(--brand)">read them</a></span></div><div class="stat"><b>2009</b><span>Family owned and operated since</span></div><div class="stat"><b>Austin&ndash;SA</b><span>Our service area</span></div></div></div>
 
 <div class="wrap">
+  <section class="rv">
+    <p class="label">What we do</p>
+    <h2>Air conditioning and heating, done properly</h2>
+    <div class="cards">
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18M3 12h18M3 17h18"/><path d="M7 3v18M17 3v18"/></svg></div><b>Air conditioning repair</b><span>Diagnosis and repair for residential and light commercial systems.</span></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 22v-6"/><circle cx="12" cy="12" r="4"/><path d="M4.9 4.9l3 3M19.1 19.1l-3-3"/></svg></div><b>Heating repair</b><span>Gas furnaces and heat pumps, kept running through the cold snaps.</span></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M7 20h10M12 16v4"/></svg></div><b>System replacement &amp; installation</b><span>Full replacement and new installation when a repair is no longer the honest answer.</span></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-8M6 20v-4M18 20v-12"/><path d="M3 20h18"/></svg></div><b>Maintenance</b><span>Keeping a system healthy is cheaper than replacing one.</span></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="9" rx="2"/><path d="M6 19h12"/></svg></div><b>Mini-splits</b><span>Ductless systems for rooms, additions and workshops.</span></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M7 12h10"/></svg></div><b>Heat pumps &amp; gas furnaces</b><span>Supplied, fitted and serviced.</span></div>
+    </div>
+    <p class="lede" style="margin:30px 0 0">Residential and light commercial.</p>
+  </section>
+  <section class="rv">
+    <p class="label">Recent work</p>
+    <h2>Jobs we have finished lately</h2>
+    <p class="lede">A few of the systems we have put in and put right around Hays County.</p>
+    <!-- PHOTO SLOTS: add work-1.jpg, work-2.jpg, work-3.jpg to this folder, then
+         swap each div below for: <img class="shot" src="work-1.jpg" alt="the job"> -->
+    <div class="gallery">
+      <div class="shot"><span>Photograph of recent work<br>goes here</span></div>
+      <div class="shot"><span>Photograph of recent work<br>goes here</span></div>
+      <div class="shot"><span>Photograph of recent work<br>goes here</span></div>
+    </div>
 
-  <section class="hero">
-    <h1>Texas Elite Air Conditioning and Heating</h1>
-    <p class="tagline">Local. Trusted. Affordable.</p>
-    <p class="since">Family owned and operated since 2009, serving Kyle, TX and the surrounding area.</p>
-    <a class="cta" href="tel:+15127497721">(512) 749-7721</a>
-    <p class="cta-note">Prefer to text? <a href="sms:+17373024447">737-302-4447</a></p>
+  </section>
+  <section class="rv">
+    <p class="label">How we work</p>
+    <h2>Straight answers, and a guarantee behind the work</h2>
+    <div class="quotes">
+      <figure><span class="mark">&ldquo;</span><p>Our mission is to simplify your HVAC issue and help you make an informed decision that best suits your needs at an affordable rate.</p><figcaption>Texas Elite Air Conditioning and Heating</figcaption></figure>
+      <figure><span class="mark">&ldquo;</span><p>We treat every customer as a member of our family, not just a customer &mdash; with guarantees on all work.</p><figcaption>Texas Elite Air Conditioning and Heating</figcaption></figure>
+    </div>
+    <p class="lede" style="margin:30px 0 0">Reviewers point to owner Ozzie for straight answers &mdash; including
+    technicians who will not recommend a part replacement that is not needed.</p>
+  </section>
+  <section class="rv">
+    <p class="label">Where we work</p>
+    <h2>Austin to San Antonio, and everything between</h2>
+    <div class="chips"><span class="chip">Kyle</span><span class="chip">Buda</span><span class="chip">San Marcos</span><span class="chip">Hays County</span><span class="chip">Austin</span><span class="chip">San Antonio</span></div>
+    <p class="lede" style="margin:26px 0 0">&ldquo;Austin to SA &amp; surrounding areas.&rdquo; Also listed as serving Hays County and the surrounding area.</p>
+  </section>
+  <section class="rv">
+    <p class="label">Contact</p>
+    <h2>Call, or send a message</h2>
+    <div class="kv">
+      <div><span>Call</span><b><a href="tel:+15127497721">(512) 749-7721</a></b></div>
+      <div><span>Text</span><b><a href="sms:+17373024447">737-302-4447</a></b></div>
+      <div><span>Based in</span><b>Kyle, TX 78640</b></div>
+    </div>
+    <p class="src">Rating and review count read from Birdeye on 2026-09-15. Review counts change over time.</p>
   </section>
 
-  <section>
-    <h2>What we do</h2>
-    <ul class="services">
-      <li>Air conditioning repair</li>
-      <li>Heating repair</li>
-      <li>System replacement &amp; installation</li>
-      <li>Maintenance</li>
-      <li>Mini-splits</li>
-      <li>Heat pumps</li>
-      <li>Gas furnaces</li>
-    </ul>
-    <p class="scope">Residential and light commercial.</p>
-  </section>
 
-  <section>
-    <h2>Where we work</h2>
-    <ul class="area-list">
-      <li><q>Austin to SA &amp; surrounding areas.</q></li>
-      <li>Also listed as serving Hays County and the surrounding area.</li>
-    </ul>
-  </section>
-
-  <section class="about">
-    <h2>Our mission</h2>
-    <blockquote>
-      &ldquo;Our mission is to simplify your HVAC issue and help you make an
-      informed decision that best suits your needs at an affordable rate.&rdquo;
-    </blockquote>
-    <blockquote>
-      &ldquo;We treat every customer as a member of our family, not just a
-      customer,&rdquo; with guarantees on all work.
-    </blockquote>
-  </section>
-
-  <section>
-    <h2>Reputation</h2>
-    <div class="rep">
-      <div class="stars">5.0 ★</div>
-      <p class="stars-label">Average rating across 476 reviews on Birdeye</p>
-      <p class="note">Reviewers on Birdeye consistently point to owner Ozzie for
-      straight answers — including technicians who won&rsquo;t recommend a part
-      replacement that isn&rsquo;t needed.</p>
+  <section class="rv" id="enquire">
+    <div class="enq">
+      <div class="art"><svg width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 800 400"><g fill="none" stroke="#fff" stroke-width="1.3"><path d="M-40 400 q 120 -120 300 -200 t 340 -150"/><path d="M-14 400 q 120 -129 300 -207 t 340 -155"/><path d="M12 400 q 120 -138 300 -214 t 340 -160"/><path d="M38 400 q 120 -147 300 -221 t 340 -165"/><path d="M64 400 q 120 -156 300 -228 t 340 -170"/><path d="M90 400 q 120 -165 300 -235 t 340 -175"/><path d="M116 400 q 120 -174 300 -242 t 340 -180"/><path d="M142 400 q 120 -183 300 -249 t 340 -185"/><path d="M168 400 q 120 -192 300 -256 t 340 -190"/><path d="M194 400 q 120 -201 300 -263 t 340 -195"/><path d="M220 400 q 120 -210 300 -270 t 340 -200"/><path d="M246 400 q 120 -219 300 -277 t 340 -205"/><path d="M272 400 q 120 -228 300 -284 t 340 -210"/><path d="M298 400 q 120 -237 300 -291 t 340 -215"/><path d="M324 400 q 120 -246 300 -298 t 340 -220"/><path d="M350 400 q 120 -255 300 -305 t 340 -225"/><path d="M376 400 q 120 -264 300 -312 t 340 -230"/><path d="M402 400 q 120 -273 300 -319 t 340 -235"/><path d="M428 400 q 120 -282 300 -326 t 340 -240"/><path d="M454 400 q 120 -291 300 -333 t 340 -245"/><path d="M480 400 q 120 -300 300 -340 t 340 -250"/><path d="M506 400 q 120 -309 300 -347 t 340 -255"/></g></svg></div>
+      <p class="label" style="color:rgba(255,255,255,.7)">Enquiries</p>
+      <h2>Tell us what you need</h2>
+      <p class="lede">Send a few details and we will come back to you. If it is urgent,
+      calling is faster.</p>
+      <form action="https://formsubmit.co/enocherdner@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Website enquiry — Texas Elite Air Conditioning and Heating">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" style="display:none">
+        <div><label for="n">Name</label><input id="n" name="Name" required placeholder="Your name"></div>
+        <div><label for="p">Phone</label><input id="p" name="Phone" required placeholder="Best number to reach you"></div>
+        <div class="full"><label for="e">Email</label><input id="e" type="email" name="Email" placeholder="Optional"></div>
+        <div class="full"><label for="m">What do you need?</label><textarea id="m" name="Message" required placeholder="A sentence or two is plenty."></textarea></div>
+        <div class="full"><button type="submit">Send enquiry</button></div>
+      </form>
+      <p class="orcall">Or call <a href="tel:+15127497721">(512) 749-7721</a>.</p>
     </div>
   </section>
 
-  <section class="contact">
-    <h2>Get in touch</h2>
-    <p class="label">Call</p>
-    <p><a class="big-phone" href="tel:+15127497721">(512) 749-7721</a></p>
-    <p class="label">Text</p>
-    <p><a class="big-phone" href="sms:+17373024447">737-302-4447</a></p>
-    <p class="label">Based in</p>
-    <p>Kyle, TX 78640</p>
-  </section>
-
+  <footer>Texas Elite Air Conditioning and Heating &middot; Kyle, Texas 78640</footer>
 </div>
 
-<footer class="site">
-  <div class="wrap">
-    <p>Texas Elite Air Conditioning and Heating &middot; Kyle, TX 78640</p>
-  </div>
-</footer>
+<div class="bar"><a href="tel:+15127497721"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Call (512) 749-7721</a></div>
+
+<script>
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:.12});
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+</script>
+
+<!-- ═══ INSIGHTS ═══════════════════════════════════════════════════════════
+     What the owner gets told each month. Two things actually matter to a
+     trade business: how many people tapped the phone number, and how many
+     sent the form. Pageviews are vanity.
+
+     The counting is done by whichever analytics you switch on below. The
+     event names are already wired to the buttons, so nothing here changes
+     when you pick one.
+
+     TO SWITCH IT ON — pick one and paste its tag where marked:
+       Cloudflare Web Analytics — free forever, no cookie banner needed.
+         https://dash.cloudflare.com  →  Analytics  →  Web Analytics  →  Add site
+       Plausible — $9/mo, nicer dashboard you can share with the client.
+     ──────────────────────────────────────────────────────────────────── -->
+<!-- Umami. Same account as the other client sites; filter by page path.
+     Events wired: Call tapped, Text tapped, Enquiry sent. -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="3f63e87b-8641-4faf-9c91-b0ebf488434a"></script>
+<script>
+(function(){
+  function track(name, detail){
+    try{
+      if (window.plausible) window.plausible(name, {props: detail || {}});
+      if (window.gtag) window.gtag('event', name, detail || {});
+      // Always leave a local trace so a tap is never silently lost.
+      var k='insights';
+      var log=JSON.parse(localStorage.getItem(k)||'{}');
+      log[name]=(log[name]||0)+1;
+      log._last=new Date().toISOString();
+      localStorage.setItem(k, JSON.stringify(log));
+    }catch(e){}
+  }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[href^="tel:"]');
+    if (a) track('Call tapped', {where: a.closest('.bar') ? 'sticky bar' : 'page'});
+    var s = e.target.closest('a[href^="sms:"]');
+    if (s) track('Text tapped');
+  });
+  var f = document.querySelector('form');
+  if (f) f.addEventListener('submit', function(){ track('Enquiry sent'); });
+  // For Enoch: run  JSON.parse(localStorage.insights)  in the console on any
+  // device to see that device's own taps. The real numbers come from the
+  // analytics tag above, which counts every visitor.
+})();
+</script>
 
 </body>
 </html>

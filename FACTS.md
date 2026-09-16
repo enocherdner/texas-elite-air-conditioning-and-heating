@@ -37,3 +37,17 @@ fact on the page. If a fact isn't listed here, it isn't on the page.
   accreditation** — none confirmed in BRIEF.md.
 - Nothing about the unrelated Spring, TX "Texas Elite Air, LLC" — different
   business, out of scope.
+
+## Correction — 2026-09-16
+
+The demo page briefly carried **"443 Google reviews"**. That figure is **not in this
+file and no source was found for it** — it came from the original call-sheet research,
+not from a listing anyone re-checked. It has been removed from the page.
+
+Birdeye was re-fetched on 2026-09-16 and returned `"reviewCount":476`, so the page now
+states **5.0 across 476 reviews** and links to Birdeye, which is the one review figure
+that is actually sourced.
+
+**The rule this enforces:** a number that is not in FACTS.md does not go on the page.
+The Cleaning Queen build had review figures taken from a similarly-named but different
+business; this is the same failure caught before publishing rather than after.
