@@ -238,6 +238,22 @@
                box-shadow:0 18px 44px rgba(0,0,0,.14)}
   .vanshot figcaption{margin-top:12px;font-size:14.5px;color:var(--muted,#6b7280)}
   @media (max-width:860px){ .logo{max-width:150px} }
+
+  /* Four stats now, and the licence number is a long string — give each cell room
+     and let the licence sit at a size that will not collide with its neighbour. */
+  .band .wrap{grid-template-columns:repeat(auto-fit,minmax(168px,1fr))!important}
+  .stat{padding-right:18px!important}
+  .stat b{font-size:clamp(20px,2.2vw,30px)!important;letter-spacing:-.01em;
+          overflow-wrap:anywhere}
+  .stat.lic b{font-size:clamp(15px,1.5vw,19px)!important;letter-spacing:.02em}
+  /* Their logo should read as a brand mark, not a favicon. */
+  .logo{max-width:230px!important;padding:14px!important;margin-bottom:22px!important;
+        box-shadow:0 10px 30px rgba(0,0,0,.18)}
+  @media (max-width:860px){
+    .logo{max-width:180px!important}
+    .band .wrap{grid-template-columns:1fr 1fr!important}
+    .stat{border-right:0!important;border-bottom:1px solid var(--line);padding:20px 14px 18px 0!important}
+  }
 </style>
 </head>
 <body>
@@ -256,7 +272,7 @@
   </div>
 </div>
 
-<div class="band"><div class="wrap"><div class="stat"><b>5.0<em>&#9733;</em></b><span>across 476 reviews</span></div><div class="stat"><b>2009</b><span>Family owned and operated since</span></div><div class="stat"><b>TACLB88483E</b><span>Texas licensed contractor</span></div><div class="stat"><b>Austin&ndash;SA</b><span>Our service area</span></div></div></div>
+<div class="band"><div class="wrap"><div class="stat"><b>5.0<em>&#9733;</em></b><span>across 476 reviews</span></div><div class="stat"><b>2009</b><span>Family owned and operated since</span></div><div class="stat lic"><b>TACLB88483E</b><span>Texas licensed contractor</span></div><div class="stat"><b>Austin&ndash;SA</b><span>Our service area</span></div></div></div>
 
 <div class="wrap">
   <section class="rv">
