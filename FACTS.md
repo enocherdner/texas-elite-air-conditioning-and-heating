@@ -80,3 +80,32 @@ phone-matched sources support (422 and 405). The specific 476 has been removed.
 
 **Ask Ozzie on the call** whether (512) 787-7082 is also theirs. If it is, Birdeye is
 confirmed and the higher count can go back on.
+
+## Third pass — 2026-09-16, resolved by their own cover photo
+
+Their Nextdoor **business cover photo** (attached to the business profile, not the feed)
+shows their van and trailer. It settles several open questions at once, from their own
+signwriting:
+
+| Fact | Evidence |
+|---|---|
+| **Both phone numbers are theirs** — 512-749-7721 **and** 512-787-7082 | Both painted on the van and on the trailer |
+| **Texas contractor licence TACLB88483E** | Painted on both vehicles |
+| **"Residential & Commercial"** (not "light commercial") | Painted on both vehicles |
+| **"Family Owned & Operated"** | Painted on both vehicles |
+| **"Local. Trusted. Affordable."** | On the van, matching their Instagram bio exactly |
+| Services: **Seasonal Tune Ups · Service & Repair · Installation** | Listed on the van door |
+| They display a Google Customer Rating badge with a QR code | On van and trailer |
+
+**This resolves the Birdeye concern from the previous correction.** Birdeye listed
+(512) 787-7082, which did not match the main number and therefore could not be anchored.
+The van shows both numbers side by side, so **Birdeye is the same business** and its
+**5.0 / 476** figure is legitimate. The page can state it.
+
+**Owner's name:** a Nextdoor recommendation names him as **"Osiel"**; others call him
+**"Ozzie"**. Ozzie is almost certainly the everyday form of Osiel. Use Ozzie on the call.
+
+**Images used on the page** are the business profile's own logo and cover photo from their
+verified Nextdoor page. **Feed photos were deliberately not used** — that feed also carries
+posts from other businesses (a recommendation for "Chuck's Air Conditioning" appears on it),
+so no `post_photos` image can be attributed with confidence.

@@ -230,6 +230,14 @@
   .quotes cite{font-style:normal;font-size:13px;color:var(--muted,#6b7280);font-weight:600}
   .quotes cite span{color:#e8a13a;letter-spacing:1px}
   @media (max-width:860px){ .quotes{grid-template-columns:1fr;gap:14px} }
+
+  .logo{display:block;max-width:190px;height:auto;margin:0 0 18px;border-radius:12px;
+        background:#fff;padding:10px}
+  .vanshot{margin:0 0 36px}
+  .vanshot img{width:100%;height:auto;border-radius:16px;display:block;
+               box-shadow:0 18px 44px rgba(0,0,0,.14)}
+  .vanshot figcaption{margin-top:12px;font-size:14.5px;color:var(--muted,#6b7280)}
+  @media (max-width:860px){ .logo{max-width:150px} }
 </style>
 </head>
 <body>
@@ -237,9 +245,7 @@
 <div class="hero">
   <div class="art"><svg width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 800 400"><g fill="none" stroke="#fff" stroke-width="1.3"><path d="M-40 400 q 120 -120 300 -200 t 340 -150"/><path d="M-14 400 q 120 -129 300 -207 t 340 -155"/><path d="M12 400 q 120 -138 300 -214 t 340 -160"/><path d="M38 400 q 120 -147 300 -221 t 340 -165"/><path d="M64 400 q 120 -156 300 -228 t 340 -170"/><path d="M90 400 q 120 -165 300 -235 t 340 -175"/><path d="M116 400 q 120 -174 300 -242 t 340 -180"/><path d="M142 400 q 120 -183 300 -249 t 340 -185"/><path d="M168 400 q 120 -192 300 -256 t 340 -190"/><path d="M194 400 q 120 -201 300 -263 t 340 -195"/><path d="M220 400 q 120 -210 300 -270 t 340 -200"/><path d="M246 400 q 120 -219 300 -277 t 340 -205"/><path d="M272 400 q 120 -228 300 -284 t 340 -210"/><path d="M298 400 q 120 -237 300 -291 t 340 -215"/><path d="M324 400 q 120 -246 300 -298 t 340 -220"/><path d="M350 400 q 120 -255 300 -305 t 340 -225"/><path d="M376 400 q 120 -264 300 -312 t 340 -230"/><path d="M402 400 q 120 -273 300 -319 t 340 -235"/><path d="M428 400 q 120 -282 300 -326 t 340 -240"/><path d="M454 400 q 120 -291 300 -333 t 340 -245"/><path d="M480 400 q 120 -300 300 -340 t 340 -250"/><path d="M506 400 q 120 -309 300 -347 t 340 -255"/></g></svg></div>
   <div class="wrap">
-      <!-- LOGO SLOT: put their logo in this folder as logo.png, then delete the
-           two comment markers on the line directly below. Nothing else changes. -->
-      <!--<img class="logo" src="logo.png" alt="Texas Elite Air Conditioning and Heating">-->
+      <img class="logo" src="logo.jpg" alt="Texas Elite Air Conditioning and Heating">
     <p class="kicker"><i></i>Kyle, Texas</p>
     <h1>Texas Elite Air Conditioning &amp; Heating</h1>
     <p class="sub">Family owned and operated since 2009. Local. Trusted. Affordable.</p>
@@ -250,23 +256,29 @@
   </div>
 </div>
 
-<div class="band"><div class="wrap"><div class="stat"><b>5.0<em>&#9733;</em></b><span>across more than 400 reviews</span></div><div class="stat"><b>2009</b><span>Family owned and operated since</span></div><div class="stat"><b>Austin&ndash;SA</b><span>Our service area</span></div></div></div>
+<div class="band"><div class="wrap"><div class="stat"><b>5.0<em>&#9733;</em></b><span>across 476 reviews</span></div><div class="stat"><b>2009</b><span>Family owned and operated since</span></div><div class="stat"><b>TACLB88483E</b><span>Texas licensed contractor</span></div><div class="stat"><b>Austin&ndash;SA</b><span>Our service area</span></div></div></div>
 
 <div class="wrap">
   <section class="rv">
     <p class="label">What we do</p>
     <h2>Air conditioning and heating, done properly</h2>
     <div class="cards">
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18M3 12h18M3 17h18"/><path d="M7 3v18M17 3v18"/></svg></div><b>Air conditioning repair</b><span>Diagnosis and repair for residential and light commercial systems.</span></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18M3 12h18M3 17h18"/><path d="M7 3v18M17 3v18"/></svg></div><b>Air conditioning repair</b><span>Diagnosis and repair for residential and commercial systems.</span></div>
       <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 22v-6"/><circle cx="12" cy="12" r="4"/><path d="M4.9 4.9l3 3M19.1 19.1l-3-3"/></svg></div><b>Heating repair</b><span>Gas furnaces and heat pumps, kept running through the cold snaps.</span></div>
       <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M7 20h10M12 16v4"/></svg></div><b>System replacement &amp; installation</b><span>Full replacement and new installation when a repair is no longer the honest answer.</span></div>
       <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-8M6 20v-4M18 20v-12"/><path d="M3 20h18"/></svg></div><b>Maintenance</b><span>Keeping a system healthy is cheaper than replacing one.</span></div>
       <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="9" rx="2"/><path d="M6 19h12"/></svg></div><b>Mini-splits</b><span>Ductless systems for rooms, additions and workshops.</span></div>
       <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M7 12h10"/></svg></div><b>Heat pumps &amp; gas furnaces</b><span>Supplied, fitted and serviced.</span></div>
     </div>
-    <p class="lede" style="margin:30px 0 0">Residential and light commercial.</p>
+    <p class="lede" style="margin:30px 0 0">Residential and commercial.</p>
   </section>
   <section class="rv">
+    <figure class="vanshot">
+      <img src="van.jpg" alt="Texas Elite Air Conditioning and Heating van and trailer">
+      <figcaption>Our van and trailer &mdash; licensed, insured and signwritten, so you know
+      exactly who turned up.</figcaption>
+    </figure>
+
     <p class="label">What customers say</p>
     <h2>Five stars, more than four hundred times</h2>
     <p class="lede">Every one of these is a real neighbour, on our verified Nextdoor page.</p>
@@ -324,7 +336,7 @@
       <div><span>Text</span><b><a href="sms:+17373024447">737-302-4447</a></b></div>
       <div><span>Based in</span><b>Kyle, TX 78640</b></div>
     </div>
-    <p class="src">Rating shown as listed on Nextdoor, hvacservice.io and DispatchCore, all checked 16 September 2026. Review counts change over time.</p>
+    <p class="src">Rating from Birdeye, checked 16 September 2026. Review counts change over time.</p>
   </section>
 
 
