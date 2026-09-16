@@ -109,3 +109,15 @@ The van shows both numbers side by side, so **Birdeye is the same business** and
 verified Nextdoor page. **Feed photos were deliberately not used** — that feed also carries
 posts from other businesses (a recommendation for "Chuck's Air Conditioning" appears on it),
 so no `post_photos` image can be attributed with confidence.
+
+## Hours — resolved 2026-09-16
+
+The three directories give three different sets of opening hours, none of them primary.
+**Their own Nextdoor post settles it in their words:** *"We are available all hours and can
+be reached by text for faster service... During this peak season time, we are trying to
+service as many as we can, so if we don't answer please send a text to the given number
+above for the FASTEST response."*
+
+So the page states **"All hours — text for the fastest response"** rather than any
+directory's invented schedule. Sourced, and it also explains why the listings disagree:
+they do not keep fixed hours.
