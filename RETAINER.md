@@ -1,3 +1,16 @@
+## Call log
+
+**2026-09-16, ~4:40pm — rang (512) 749-7721. No answer.**
+
+Not a rejection, just no pickup. Their own Nextdoor post asks for exactly this:
+*"please leave a message if we do not answer. During this peak season time... if we don't
+answer please send a text to the given number above for the FASTEST response."*
+
+**Next step: text (737) 302-4447** with the link. Drafted the same day.
+
+If the text gets no reply in two days, ring the main number again mid-morning on a weekday
+— a different slot to the one already tried. Do not ring twice in a day.
+
 # Texas Elite Air Conditioning and Heating — the arrangement
 
 Not agreed yet. Nothing here is true until Enoch has said it to them and they
