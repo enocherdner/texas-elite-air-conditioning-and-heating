@@ -254,6 +254,12 @@
     .band .wrap{grid-template-columns:1fr 1fr!important}
     .stat{border-right:0!important;border-bottom:1px solid var(--line);padding:20px 14px 18px 0!important}
   }
+
+  .vanpair{display:grid;grid-template-columns:1.25fr 1fr;gap:16px;margin:26px 0 10px}
+  .vanpair figure{margin:0}
+  .vanpair img{width:100%;height:100%;object-fit:cover;border-radius:16px;display:block;
+               box-shadow:0 16px 40px rgba(0,0,0,.15)}
+  @media (max-width:860px){ .vanpair{grid-template-columns:1fr} }
 </style>
 </head>
 <body>
@@ -289,11 +295,16 @@
     <p class="lede" style="margin:30px 0 0">Residential and commercial.</p>
   </section>
   <section class="rv">
-    <figure class="vanshot">
-      <img src="van.jpg" alt="Texas Elite Air Conditioning and Heating van and trailer">
-      <figcaption>Our van and trailer &mdash; licensed, insured and signwritten, so you know
-      exactly who turned up.</figcaption>
-    </figure>
+    <p class="label">On the road</p>
+    <h2>You will know exactly who turned up</h2>
+    <p class="lede">Signwritten van and trailer, a Texas contractor licence on both, and the same
+    two numbers you called.</p>
+    <div class="vanpair">
+      <figure><img src="van.jpg" alt="Texas Elite van and trailer, Kyle TX"></figure>
+      <figure><img src="van-detail.jpg" alt="Licence TACLB88483E and services on the van door"></figure>
+    </div>
+    <p class="src">Seasonal tune-ups &middot; service &amp; repair &middot; installation &mdash;
+    residential and commercial, family owned and operated.</p>
 
     <p class="label">What customers say</p>
     <h2>Five stars, more than four hundred times</h2>
