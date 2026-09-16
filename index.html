@@ -221,6 +221,15 @@
   .rv.in{opacity:1;transform:none;}
   @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none;}
     html{scroll-behavior:auto;}}
+
+  /* Customer words. Real ones, from the page that carries their phone number. */
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+  .quotes blockquote{margin:0;background:var(--card,#fff);border:1px solid var(--line,#e6e6ea);
+    border-radius:14px;padding:22px 22px 18px;display:flex;flex-direction:column;justify-content:space-between}
+  .quotes blockquote p{margin:0 0 14px;font-size:16.5px;line-height:1.55}
+  .quotes cite{font-style:normal;font-size:13px;color:var(--muted,#6b7280);font-weight:600}
+  .quotes cite span{color:#e8a13a;letter-spacing:1px}
+  @media (max-width:860px){ .quotes{grid-template-columns:1fr;gap:14px} }
 </style>
 </head>
 <body>
@@ -258,16 +267,37 @@
     <p class="lede" style="margin:30px 0 0">Residential and light commercial.</p>
   </section>
   <section class="rv">
-    <p class="label">Recent work</p>
-    <h2>Jobs we have finished lately</h2>
-    <p class="lede">A few of the systems we have put in and put right around Hays County.</p>
-    <!-- PHOTO SLOTS: add work-1.jpg, work-2.jpg, work-3.jpg to this folder, then
-         swap each div below for: <img class="shot" src="work-1.jpg" alt="the job"> -->
-    <div class="gallery">
-      <div class="shot"><span>Photograph of recent work<br>goes here</span></div>
-      <div class="shot"><span>Photograph of recent work<br>goes here</span></div>
-      <div class="shot"><span>Photograph of recent work<br>goes here</span></div>
+    <p class="label">What customers say</p>
+    <h2>Five stars, more than four hundred times</h2>
+    <p class="lede">Every one of these is a real neighbour, on our verified Nextdoor page.</p>
+
+    <div class="quotes">
+      <blockquote>
+        <p>&ldquo;Ozzie is a great AC technician, been with him for years, never disappoints.&rdquo;</p>
+        <cite>M. V. &middot; <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
+      </blockquote>
+      <blockquote>
+        <p>&ldquo;Honest diagnostic, never trying to rip me off. Quick and quality work &mdash; I would
+        definitely recommend doing business with Osiel.&rdquo;</p>
+        <cite>R. Z. &middot; <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
+      </blockquote>
+      <blockquote>
+        <p>&ldquo;The best there is!&rdquo;</p>
+        <cite>J. L. &middot; <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
+      </blockquote>
     </div>
+    <p class="src">Recommendations from our Nextdoor page. Initials shown as Nextdoor shows them.</p>
+
+    <!-- PHOTOS — the single biggest upgrade left on this page.
+         Ask Ozzie for five shots of finished jobs, drop them in this folder as
+         work-1.jpg, work-2.jpg, work-3.jpg, and uncomment the block below.
+         Three real photographs will out-convert anything else that could go here.
+    <div class="gallery">
+      <img class="shot" src="work-1.jpg" alt="A system we installed in Kyle">
+      <img class="shot" src="work-2.jpg" alt="A repair we finished in Buda">
+      <img class="shot" src="work-3.jpg" alt="A replacement in San Marcos">
+    </div>
+    -->
 
   </section>
   <section class="rv">
@@ -294,7 +324,7 @@
       <div><span>Text</span><b><a href="sms:+17373024447">737-302-4447</a></b></div>
       <div><span>Based in</span><b>Kyle, TX 78640</b></div>
     </div>
-    <p class="src">Rating and review count read from Birdeye on 2026-09-15. Review counts change over time.</p>
+    <p class="src">Rating shown as listed on Nextdoor, hvacservice.io and DispatchCore, all checked 16 September 2026. Review counts change over time.</p>
   </section>
 
 
