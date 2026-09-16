@@ -260,6 +260,15 @@
   .vanpair img{width:100%;height:100%;object-fit:cover;border-radius:16px;display:block;
                box-shadow:0 16px 40px rgba(0,0,0,.15)}
   @media (max-width:860px){ .vanpair{grid-template-columns:1fr} }
+
+  .vanwide{margin:26px 0 16px}
+  .vanwide img{width:100%;height:auto;border-radius:16px;display:block;
+               box-shadow:0 16px 40px rgba(0,0,0,.15)}
+  .jobs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 10px}
+  .jobs figure{margin:0}
+  .jobs img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;display:block;
+            box-shadow:0 10px 26px rgba(0,0,0,.12)}
+  @media (max-width:860px){ .jobs{grid-template-columns:1fr 1fr;gap:10px} }
 </style>
 </head>
 <body>
@@ -299,9 +308,14 @@
     <h2>You will know exactly who turned up</h2>
     <p class="lede">Signwritten van and trailer, a Texas contractor licence on both, and the same
     two numbers you called.</p>
-    <div class="vanpair">
-      <figure><img src="van.jpg" alt="Texas Elite van and trailer, Kyle TX"></figure>
-      <figure><img src="van-detail.jpg" alt="Licence TACLB88483E and services on the van door"></figure>
+    <figure class="vanwide">
+      <img src="van.jpg" alt="Texas Elite van and trailer, Kyle TX">
+    </figure>
+
+    <div class="jobs">
+      <figure><img src="job-1.jpg" alt="Condenser and mini-split installed at a home"></figure>
+      <figure><img src="job-2.jpg" alt="New outdoor condensing unit on a concrete pad"></figure>
+      <figure><img src="job-3.jpg" alt="Air handler and ductwork in an attic"></figure>
     </div>
     <p class="src">Seasonal tune-ups &middot; service &amp; repair &middot; installation &mdash;
     residential and commercial, family owned and operated.</p>

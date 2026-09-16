@@ -121,3 +121,22 @@ above for the FASTEST response."*
 So the page states **"All hours — text for the fastest response"** rather than any
 directory's invented schedule. Sourced, and it also explains why the listings disagree:
 they do not keep fixed hours.
+
+## Job photos added 2026-09-16 — read this before sending the link
+
+Three job photos (`job-1/2/3.jpg`) were taken from the **post feed of their Nextdoor
+business page** — the page that carries their phone number twelve times. They show real
+HVAC work: a condenser with a wall-mounted mini-split head, a new Goodman condensing unit
+on a pad, and an attic air handler with ductwork.
+
+**They are not provably theirs.** A Nextdoor business page's feed can carry neighbours'
+posts as well as the business's own — a recommendation for *Chuck's Air Conditioning*
+appears on this same page. These three sit closest to Texas Elite markers in the page
+source, which is suggestive, not proof.
+
+**Enoch asked for them knowing this.** The fix is one question on the call:
+*"Those three job photos on there — are they yours? If not, send me three of your own and
+I'll swap them today."* Either answer improves the page.
+
+The logo and the van photo are **not** in any doubt — both are attached to the business
+profile itself, not the feed.
